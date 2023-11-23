@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="individual.html">
+    <link rel="stylesheet" href="casal.html">
+    <link rel="stylesheet" href="serviços.html">
+    <title>Serviços</title>
+</head>
+
+<header class="cabecalho">
+    <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+    <menu id="itens" class="menu">
+        <li class="lista-menu"><a href="index.html" class="lista-menu-inicio">Início</a></li>
+        <li class="lista-menu"><a href="index.html#sobre-mim" class="lista-menu-link">Sobre mim</a></li>
+        <li class="lista-menu"><a href="index.html#sobre-terapia" class="lista-menu-link">Sobre a terapia</a></li>
+        <li class="lista-menu"><a href="serviços.html" class="lista-menu-link">Serviços</a></li>
+    </menu>
+    <ul class="opcoes">
+        <li class="lista-opcoes"><a href="index.html" class="lista-menu-inicio">Início</a></li>
+        <li class="lista-opcoes"><a href="#sobre-mim" class="lista-menu-link">Sobre mim</a></li>
+        <li class="lista-opcoes"><a href="#sobre-terapia" class="lista-menu-link">Sobre a terapia</a></li>
+        <li class="lista-opcoes"><a href="serviços.html" class="lista-menu-link">Serviços</a></li>
+    </ul>
+</header>
+
+<body>
+
+    <div class="servicos">
+        <div class="servicos__pc">
+            <h1 class="servicos__titulo">Serviços</h1>
+            <p class="servicos__texto">Clique para saber mais sobre os serviços e agende sua consulta</p>
+        </div>
+        <div class="servicos__img-pc"><img src="assets/Kamilla5.png" alt="psicologa kamilla" class="servicos__img"></div>
+    </div>
+    <div class="individual">
+        <h2 class="individual__titulo">Grupo terapêutico para mulheres</h2>
+        <p class="individual__texto">Os encontros são <strong class="individual-negrito">on-line, com um número limitado de mulheres por grupo.</strong> Esses encontros são feito de <strong class="individual-negrito">15 em 15 dias e tem duração de 1 hora e 30 minutos.</strong> Esse grupo é para, você mulher, que: se sente sobrecarregada com as inúmeras tarefas que precisa cumprir no dia; se sente infeliz no seu relacionamento; tem dificuldade com as questões sociais que nos cercam; tem dificuldade em lidar com a alimentação; tem dificuldade de entender, aceitar e cuidar do seu corpo; é mãe e quer entender melhor como funciona exercer essa tarefa; é mãe e acabou se deixando  de lado; e para todas as mulheres que desejam se unir, compartilhar e aprender sobre as questões atuais que nos cercam.</p>
+        <a href="https://wa.link/al7a6r" class="individual-wpp">Entrar na fila de espera</a>
+    </div>
+
+    <footer class="rodape">
+        <a href="https://wa.link/al7a6r" class="rodape__wpp">Agende sua consulta</a>
+
+        <ul class="rodape__lista">
+            <li class="rodape__texto">Kamilla Pinheiro Barreto - Psicóloga Clínica</li>
+            <li class="rodape__texto">CRP 06/198897</li>
+            <li class="rodape__texto">Telefone: (21)96628-5567</li>
+            <li class="rodape__texto">Instagram: psi.kamillabarreto</li>
+            <li class="rodape__texto">E-mail: kamilla.p.barreto@gmail.com</li>
+        </ul>   
+    </footer>
+
+
+
+    <script>
+        function clickMenu() {
+        if (itens.style.height == '200px') {
+            itens.style.height = '0px'
+        } else {
+            itens.style.height = '200px'
+        }
+    }
+    </script>
+</body>
+</html>

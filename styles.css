@@ -1,0 +1,625 @@
+:root {
+    --branco: #ffffff;
+    --preto: #000000;
+    --cor-primaria: #d6cbd1;
+    --cor-secundaria: #dfbeed;
+    --terceira-cor: #ffbfd4;
+    --quarta-cor: #b4c892;
+    --quinta-cor: #6ba2ac;
+    --sexta-cor: #f7f0f3;
+    --setima-cor: #3d5155;
+    --oitava-cor: #ecf0e7;
+    --nona-cor: #945a6e;
+    --decima-cor: #643f4c;
+    --hover: #e1e7d5;
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+    --fonte-terciaria: 'Sora';
+}
+
+
+.cabecalho {
+    background-color: var(--branco);
+    padding: 0.5em;
+}
+
+body {
+    background-color: var(--branco);
+}
+
+.material-symbols-outlined {
+    background-color: var(--branco);
+    display: block;
+    width: 55vw;
+    color: var(--setima-cor);
+    font-size: 3em;
+}
+
+.menu {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.lista-menu { 
+    background-color: var(--branco);
+    display: block;
+    text-decoration: none;
+    padding: 1em 0;
+    text-align: center;
+    width: 96vw;
+}
+
+.lista-menu-link, .lista-menu-inicio {
+    text-decoration: none;
+    color: var(--setima-cor);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+}
+
+
+
+.lista-menu-inicio {
+    color: var(--nona-cor);
+}
+
+/*introdução*/
+
+.intro {
+    background-color: var(--oitava-cor);
+    display: grid;
+    text-align: center;
+    padding-top: 2em;
+    box-sizing: border-box;
+}
+
+.intro__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.6em;
+    color: var(--nona-cor);
+}
+
+.intro__frase {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 1em 2em;
+    line-height: 1.4;
+    padding-bottom: 0;
+}
+
+.intro__texto {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1em 2em;
+    line-height: 1.4;
+    padding-bottom: 2em;
+}
+
+.botao__wpp {
+    background-color: var(--nona-cor);
+    padding: 1em 2em;
+    border-radius: 24px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+}
+
+.intro__img {
+    padding-top: 2em;
+    width: 100%;
+}
+
+/*sobre mim*/
+
+.sobre__mim {
+    background-color: var(--quinta-cor);
+    justify-content: center;
+    text-align: center;
+}
+
+.sobre__mim-title {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 1.6em;
+    color: var(--nona-cor);
+    text-align: center;
+    padding-top: 1em;
+}
+
+.sobre__mim-texto {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1em 2em;
+    line-height: 1.4;
+    color: var(--branco);
+}
+
+.sobre__mim-texto2 {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0 2em;
+    padding-bottom: 1em;
+    line-height: 1.4;
+    color: var(--branco);
+}
+
+
+.sobre__mim-negrito {
+    color: var(--decima-cor);
+    font-weight: 500;
+}
+
+.sobre__mim-img {
+    justify-content: center;
+    width: 90%;
+    padding: 1em;
+}
+
+/*sobre a terapia*/
+
+.sobre__terapia {
+    border: solid 2px var(--nona-cor);
+    margin: 2em 2em 0 2em;
+}
+
+.sobre__terapia-title {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 1.6em;
+    color: var(--branco);
+    text-align: center;
+    padding: 1em 0;
+    background-color: #945a6e;
+    
+}
+
+.sobre__terapia-texto {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1em 2em;
+    line-height: 1.4;
+    color: var(--nona-cor);
+}
+
+.sobre__terapia-texto2 {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0 1em;
+    line-height: 1.4;
+    color: var(--nona-cor);
+}
+
+.sobre__terapia-texto3 {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1em 2em;
+    line-height: 1.4;
+    color: var(--nona-cor);
+}
+
+/*depoimentos*/
+
+.depoimentos {
+    text-align: center;
+}
+
+.depoimentos__titulo {
+    font-size: 4em;
+    font-family: var(--fonte-terciaria);
+    color: var(--nona-cor);
+}
+
+.depoimentos__texto {
+    font-size: 1em;
+    font-family: var(--fonte-principal);
+    line-height: 1.5;
+}
+
+.depoimento-1 {
+    padding: 1em 2.3em;
+    border-top: solid 3px var(--decima-cor);
+}
+
+.depoimento-2 {
+    padding: 1em 2.3em;
+    border-top: solid 3px var(--decima-cor);
+}
+
+.depoimento-3 {
+    padding: 1em 2.3em;
+    border-top: solid 3px var(--decima-cor);
+}
+
+.depoimento-4 {
+    padding: 1em 2.3em 2em 2.3em;
+    border-top: solid 3px var(--decima-cor);
+}
+
+/*rodape*/
+
+.rodape {
+    background-color: #643f4c;
+    padding: 4em 0 1em 0;
+    text-align: center;
+}
+
+.rodape__wpp {
+    background-color: var(--quinta-cor);
+    padding: 1em 2em;
+    border-radius: 32px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+
+}
+
+.rodape__lista {
+    padding: 2em;
+}
+
+.rodape__texto {
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/*serviços*/
+
+.servicos {
+    background-color: var(--decima-cor);
+    text-align: center;
+}
+
+.servicos__titulo {
+    font-size: 2em;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    padding-top: 1.5em;
+}
+
+.servicos__texto {
+    font-size: 1em;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    padding-top: 1.2em;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.servicos__img {
+    padding-top: 3em;
+    width: 100%;
+}
+
+.terapia {
+    margin: 2em 0;
+}
+
+.terapia__item { 
+    background-color: var(--branco);
+    display: block;
+    text-decoration: none;
+    padding-bottom: 2.2em;
+    text-align: center;
+}
+
+.terapia__link-1 {
+    text-decoration: none;
+    background-color: var(--quinta-cor);
+    color: var(--branco);
+    padding: 0.5em 3.2em;
+    font-family: var(--fonte-principal);
+}
+
+.terapia__link-2 {
+    text-decoration: none;
+    background-color: var(--quinta-cor);
+    color: var(--branco);
+    padding: 0.5em 3.5em;
+    font-family: var(--fonte-principal);
+}
+
+.terapia__link-3 {
+    text-decoration: none;
+    background-color: var(--quinta-cor);
+    color: var(--branco);
+    padding: 0.5em;
+    font-family: var(--fonte-principal);
+}
+
+/*psicoterapia individual*/
+
+.individual {
+    text-align: center;
+    padding-bottom: 2.5em;
+}
+
+.individual__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 1.5em;
+    color: var(--decima-cor);
+    padding: 1.5em 1em 0.5em 1em;
+}
+
+.individual__texto {
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    color: var(--decima-cor);
+    padding: 1em 1em 2em 1em;
+    line-height: 1.5;
+}
+
+.individual__texto-2 {
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    color: var(--decima-cor);
+    padding: 0 1em 2.5em 1em;
+    line-height: 1.5;
+}
+
+.individual-negrito {
+    font-weight: 700;
+}
+
+.individual-wpp {
+    background-color: var(--quinta-cor);
+    padding: 1em 2em;
+    border-radius: 32px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+}
+
+.opcoes {
+    display: none;
+}
+
+.sobre__mim-img-pc2 {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .lista-opcoes:hover {
+        background-color: var(--hover);
+    }
+
+
+    .material-symbols-outlined{
+        display: none;
+    }
+    
+    .menu {
+        display: block;
+    }
+
+    .opcoes{
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 2em;
+    }
+
+    .lista-opcoes {
+        padding: 0.3em 1.5em;
+    }
+
+    /*introdução*/
+
+    .intro {
+        display: flex;
+        padding: 0;
+    }
+
+    .intro__pc {
+        text-align: left;
+        padding-left: 4rem;
+        padding-top: 6rem;
+    }
+
+    .intro__titulo{
+        font-size: 2em;
+    }
+
+    .intro__frase {
+        padding: 1em 0 0 0;
+        text-align: left;
+    }
+
+    .intro__texto {
+        width: 58%;
+        font-size: 1em;
+        padding: 1em 0 2.5em 0;
+        text-align: left;
+    }
+
+    .botao__wpp {
+        font-size: 1em;
+        border-radius: 35px;
+    }
+
+    .intro__img {
+        padding: 0;
+        width: 100%;
+    }
+
+    /*sobre mim*/
+
+    .sobre__mim {
+        display: flex;
+        
+    }
+
+    .sobre__mim-img-pc {
+        display: none;
+    }
+
+    .sobre__mim-img-pc2 {
+        display: flex;
+        width: 100%;
+    }
+
+    .sobre__mim-title {
+        font-size: 2em;
+        
+    }
+
+    .sobre__mim-texto, .sobre__mim-texto2 {
+        font-size: 1em;
+        padding: 0 3em 0 3em;
+    }
+
+    .sobre__mim-texto {
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+    }
+
+   /*sobre terapia*/
+
+   .sobre__terapia {
+        margin: 6em 6em 6em 6em;
+   }
+
+   .sobre__terapia-title {
+        font-size: 1.5em;
+   }
+
+   .sobre__terapia-texto, .sobre__terapia-texto2, .sobre__terapia-texto3 {
+        font-size: 1.2em;   
+   }
+
+    /*depoimentos*/
+
+    .depoimentos__titulo {
+        font-size: 6em;
+    }
+
+    .depoimentos__texto {
+        font-size: 1.2em;
+        padding: 0 6em;
+    }
+
+    /*rodapé*/
+
+    .rodape__wpp {
+        font-size: 1em;
+        border-radius: 34px;
+    }
+
+    .rodape__texto {
+        font-size: 14px;
+    }
+
+    /*serviços*/
+
+    .servicos {
+        display: flex;
+    }
+
+    .servicos__pc {
+        text-align: left;
+        padding: 6em 0 0 4rem;
+    }
+
+    .servicos__titulo {
+        font-size: 3em;
+        padding-top: 1em;
+    }
+
+    .servicos__texto {
+        font-size: 1.3em;
+    }
+
+    .servicos__img {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .servicos__img-pc {
+        padding-left: 22rem;
+    }
+
+    .terapia__link-1, .terapia__link-2, .terapia__link-3 {
+        font-size: 1.3em;
+    }
+
+    .terapia {
+        padding: 2em;
+    }
+
+    .individual__titulo {
+        font-size: 2em;
+    }
+
+    .individual__texto, .individual__texto-2 {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .individual__texto-2 {
+        padding-bottom: 3em;
+    }
+
+    .individual {
+        padding-bottom: 4em;
+    }
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    .intro__pc {
+        padding-top: 4rem;
+    }
+
+    .intro__titulo{
+        font-size: 2.5em;
+    }
+
+    .intro__frase {
+        font-size: 1.2em;
+    }
+
+    .intro__texto {
+        font-size: 1.3em;
+        padding: 1em 0 1.5em 0;
+    }
+
+    .sobre__mim-texto, .sobre__mim-texto2 {
+        font-size: 1.2em;
+    }
+
+    .sobre__mim-texto2 {
+        padding-bottom: 1em;
+    }
+
+}
+
+@media only screen and (min-width: 1640px) {
+
+    .intro__pc {
+        padding-top: 6rem;
+    }
+
+    .rodape__texto {
+        font-size: 16px;
+    }
+
+}
